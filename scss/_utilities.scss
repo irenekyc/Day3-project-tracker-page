@@ -1,0 +1,73 @@
+//Layout
+
+.wrapper{
+    padding: 0 11%;
+}
+.mt-2{
+    margin-top:2rem;
+}
+.py-1{
+    padding: 1rem 0;
+}
+
+.py-3{
+    padding: 3rem 0;
+}
+.py-5{
+    padding: 5rem 0;
+}
+
+.ml-1{
+    margin-left:1rem;
+}
+
+
+
+//FLEX
+.flex-box{
+    display:flex;
+    align-items: center;
+
+    &.flex-between{
+        justify-content: space-between;
+    }
+}
+
+//TEXT
+.text-lead{
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+.text-primary{
+    width:45%;
+}
+
+.heading-text{
+    text-transform: uppercase;
+    color: $heading-color;
+    font-weight:700;
+    font-family: $heading-font;
+}
+
+.x-large{
+    font-size:3rem;
+}
+
+
+//Button
+.btn{
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    text-transform: uppercase;
+    border-radius: 5px;;
+} 
+
+.btn-primary{
+    background: $primary-color;
+    color: white;
+
+    &:hover{
+        filter: brightness(150%)
+    }
+}

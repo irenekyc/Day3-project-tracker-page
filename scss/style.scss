@@ -1,0 +1,104 @@
+@import 'config';
+@import 'utilities';
+
+body{
+    max-width: $desktop-width;
+    background: white;
+    color: $gray-blue;
+    font-family: $primary-font;
+    font-size:12px;
+    overflow-x: hidden;
+    line-height: 1;
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: $heading-color;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+
+
+li{
+    list-style: none;
+}
+
+.container{
+    max-width: $desktop-width;
+    height: 800px;
+    position: relative;
+ 
+    &-bg{
+        width:50%;
+        height:50%;
+        content: "";
+        position:absolute;
+        right:0;
+        top:0;
+        background: $light;
+        border-radius: 0 0 0 50px;
+        z-index:-1;
+    }
+}
+
+//////////////////////NAV BAR /////////////////////////
+nav{
+    font-family: $heading-font;
+    color: $heading-color;
+    ul{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+
+        li{
+            margin-left:3rem;
+        }
+    }
+    .nav-dif{
+        color: $gray-blue;
+    }
+}
+
+
+//HERO
+
+.hero{
+    position:relative;
+    max-width: $desktop-width;
+
+    .main-vector{
+        position: absolute;
+        top:0;
+        right:0;
+        width:50%;
+        height:50%;
+    }
+
+    &-text{
+        width:400px;
+        
+    }
+}
+
+.black-background{
+    padding: 3px 8px;
+    color:white;
+    background: $heading-color;
+    border-radius: 16px;
+}
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
